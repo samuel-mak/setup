@@ -123,3 +123,7 @@ PS1="\[\e[1;32m\]\u@\h:\w\$ \[\e[0m\]"
 
 # Disable ls colour
 unset LS_COLORS
+
+# Set VIM as default text editor
+EDITOR=vim
+
