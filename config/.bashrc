@@ -118,5 +118,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
+# Set prompt format (and font colour)
 PS1="\[\e[1;32m\]\u@\h:\w\$ \[\e[0m\]"
+
+# Disable ls colour
+unset LS_COLORS
