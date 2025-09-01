@@ -1,0 +1,9 @@
+
+
+# X Window System application configuration
+~/.Xresources is a symlink to ~/projects/setup/config/.Xresources, which contains 
+configurations for all X Window System applications (i.e. XTerm). Since GNOME doesn't 
+automatically source config files for X Window System applications after booting, a 
+startup system is created, there's a xresources.desktop startup file in ~/.config/autostart,
+in this file, it has a linked sh file which is in ~/projects/setup/scripts/xresources.sh. On startup, GNOME will find this desktop file in the autostart directory, and execute the linked sh file. It seems like .Xresources file need to be in ~/, so using symlink to 
+circumvent. 

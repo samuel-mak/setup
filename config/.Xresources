@@ -4,7 +4,7 @@
 ! Combination of geometry and faceSize determines window size
 XTerm*geometry: 90x24
 XTerm*faceName: monospace
-XTerm*faceSize: 25
+XTerm*faceSize: 12
 XTerm*foreground: #A8A8A8
 XTerm*background: #000000
 
@@ -12,20 +12,20 @@ XTerm*background: #000000
 XTerm*cursorTheme: Adwaita
 
 ! Set all rendered font colour to #A8A8A8
-xterm*color0: #A8A8A8  
-xterm*color1: #A8A8A8 
-xterm*color2: #43A18A 
-xterm*color3: #A8A8A8 
-xterm*color4: #A8A8A8 
-xterm*color5: #A8A8A8 
-xterm*color6: #A8A8A8 
-xterm*color7: #A8A8A8 
-xterm*color8: #A8A8A8 
-xterm*color9: #A8A8A8 
-xterm*color10: #43A18A 
-xterm*color11: #A8A8A8 
-xterm*color12: #A8A8A8 
-xterm*color13: #A8A8A8 
-xterm*color14: #A8A8A8 
-xterm*color15: #A8A8A8 
+XTerm*color0: #A8A8A8  
+XTerm*color1: #A8A8A8 
+XTerm*color2: #43A18A 
+XTerm*color3: #A8A8A8 
+XTerm*color4: #A8A8A8 
+XTerm*color5: #A8A8A8 
+XTerm*color6: #A8A8A8 
+XTerm*color7: #A8A8A8 
+XTerm*color8: #A8A8A8 
+XTerm*color9: #A8A8A8 
+XTerm*color10: #43A18A 
+XTerm*color11: #A8A8A8 
+XTerm*color12: #A8A8A8 
+XTerm*color13: #A8A8A8 
+XTerm*color14: #A8A8A8 
+XTerm*color15: #A8A8A8 
 

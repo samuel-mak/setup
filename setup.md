@@ -4,11 +4,13 @@ Package manager
 Browser (Firefox)
 git
 Text Editor (vim)
-Terminal emulator (e.g. I simply use the OS-native terminal)
+Terminal emulator (e.g. I simply use the OS-native terminal - maybe xterm or Alacritty)
 R
 Python
 tmux
 bash
+yt-dlp
+vlc
 
 Install brew from Homebrew website
 Use brew to install the rest of the software
@@ -30,3 +32,15 @@ MacOS settings
 
 
 MacOS
+
+
+Linux
+
+GNOME 48 settings
+- Black wallpaper
+- 
+
+
+
+
+
