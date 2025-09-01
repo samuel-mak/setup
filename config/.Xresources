@@ -1,3 +1,6 @@
+! Config file for X applications (e.g. xterm)
+! To source this, run `xrdb <path to this file>`
+
 ! Combination of geometry and faceSize determines window size
 XTerm*geometry: 90x24
 XTerm*faceName: monospace
