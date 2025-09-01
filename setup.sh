@@ -1,10 +1,15 @@
 #!/usr/bin/env bash
 
+# Create symlink to .Xresources
+if [ ! -f "~/.Xresources" ]; then
+	ln -s "~/projects/setup/config/.Xresources" "~/.Xresources"
+fi
+
 # Create desktop application autostart config script
-cd ~/.config
-if [ ! -d "autostart" ]; then
-	mkdir autostart
+if [ ! -d "~/.config/autostart" ]; then
+	cd "~/.config"
+	mkdir "autostart"
 fi 
-cd autostart 
-cp ~/projects/setup/startup/xresources.desktop .
-cd
+cd "~/.config/autostart"
+cp "~/projects/setup/startup/xresources.desktop" .
+
