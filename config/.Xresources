@@ -4,12 +4,9 @@
 ! Combination of geometry and faceSize determines window size
 XTerm*geometry: 90x24
 XTerm*faceName: monospace
-XTerm*faceSize: 12
+XTerm*faceSize: 11
 XTerm*foreground: #A8A8A8
 XTerm*background: #000000
-
-! A method to set mouse pointer size to GNOME default size (and style)
-XTerm*cursorTheme: Adwaita
 
 ! Set all rendered font colour to #A8A8A8
 XTerm*color0: #A8A8A8  
@@ -29,3 +26,15 @@ XTerm*color13: #A8A8A8
 XTerm*color14: #A8A8A8 
 XTerm*color15: #A8A8A8 
 
+! DPI of 192 is for Resolution of 3820x2160 scaled at 200%
+Xft.dpi: 192
+
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xcursor.size: 48
+
+! Dont think this has any effects on the cursor in XTerm
+! But setting this to Yaru for other potential X applications
+Xcursor.theme: Yaru

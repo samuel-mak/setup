@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=source_xresources
-Exec=/home/smak/projects/setup/scripts/xresources.sh
+Exec=~/projects/setup/scripts/xresources.sh
 Terminal=false
 X-GNOME-Autostart-enabled=true
