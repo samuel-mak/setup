@@ -125,5 +125,10 @@ PS1="\[\e[1;32m\]\u@\h:\w\$ \[\e[0m\]"
 unset LS_COLORS
 
 # Set VIM as default text editor
-EDITOR=vim
+export EDITOR='vim'
+export VISUAL='vim'
+export GIT_EDITOR='vim'
+
+# Set man page to open in vim
+export MANPAGER="vim -c 'set ft=man' -"
 
