@@ -8,3 +8,6 @@ fi
 cd ~/.config/autostart
 cp ~/projects/setup/startup/xresources.desktop .
 
+
+# Set UK keyboard (replace 'gb' with 'us' for US layout)
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'gb')]"
