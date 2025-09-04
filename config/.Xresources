@@ -4,7 +4,7 @@
 ! Combination of geometry and faceSize determines window size
 XTerm*geometry: 90x24
 XTerm*faceName: monospace
-XTerm*faceSize: 11
+XTerm*faceSize: 10
 XTerm*foreground: #A8A8A8
 XTerm*background: #000000
 

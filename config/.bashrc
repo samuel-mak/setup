@@ -129,6 +129,6 @@ export EDITOR='vim'
 export VISUAL='vim'
 export GIT_EDITOR='vim'
 
-# Set man page to open in vim
-export MANPAGER="vim -c 'set ft=man' -"
+# Set pager to less (was vim but not really compatible due to specific formatting)
+export MANPAGER=less
 
