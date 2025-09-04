@@ -20,3 +20,5 @@ set tabstop=8
 highlight LineNr guifg=#45bca6 guibg=#000000
 
 highlight EndOfBUffer ctermfg=909090
+
+set noswapfile
