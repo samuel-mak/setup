@@ -8,9 +8,21 @@ fi
 cd ~/.config/autostart
 cp ~/projects/setup/startup/xresources.desktop .
 
+# Symlinks
 
-# Set UK keyboard (replace 'gb' with 'us' for US layout)
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'gb')]"
+if [[ 
+	( ! -f "$HOME/.vimrc") || 
+	( -f "$HOME/.vimrc" && ( $(sha256sum "$HOME/.vimrc" | cut -c1-64) !=  $(sha256sum "$HOME/projects/setup/config/.vimrc" | cut -c1-64 ) ) ) ]]; then
+	ln -sf "$HOME/projects/setup/config/.vimrc" "$HOME/.vimrc"
+	echo "symlink created!"
+else
+	echo ".vimrc exists and is correct!"
+fi
+
+	
+
+# Set UK keyboard ('us' or 'gb' for US or UK layout)
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us')]"
 
 # Remove wallpaper (which results in solid black wallpaper - prefer this method to creating
 # a black png file
