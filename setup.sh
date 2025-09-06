@@ -19,14 +19,45 @@ else
 	echo ".vimrc exists and is correct!"
 fi
 
+
+# Display resolution
+# This is a bit tricky to script, you might need further adjustments, but this is a good first step
+## Set HDMI 2 connection as the primary display and set resolution to 3840x2160
+display=$(xrandr | grep " connected" | awk '{print $1}' | head -n 1)
+xrandr --output "$display" --mode 3840x2160 --primary
 	
+# Display scaling
+## Scale to 200%
+gsettings set org.gnome.desktop.interface scaling-factor 2
 
 # Set UK keyboard ('us' or 'gb' for US or UK layout)
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us')]"
 
-# Remove wallpaper (which results in solid black wallpaper - prefer this method to creating
-# a black png file
-# The line below should remove any pictures and should change to a solid colour
-# But the solid colour may not be black, so the second line sets the colour to black
+# Wallpaper
+## Remove any wallpaper picture and should change to solid colours
 gsettings set org.gnome.desktop.background picture-options 'none'
+## Set wallpaper solid colour to black
 gsettings set org.gnome.desktop.background primary-color '#000000'
+
+# Dock
+## Dock position to bottom
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM'
+## Don't display any applications in dock
+gsettings set org.gnome.shell favorite-apps "[]"
+## Don't display trash in dock
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
+## Show the "show-apps" button (only)
+gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button true
+## Autohide dock
+gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
+
+
+
+
+
+
+
+
+
+
+
