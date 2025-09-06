@@ -50,7 +50,11 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button true
 ## Autohide dock
 gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
-
+## Disable intellihide
+## intellihide is a type of autohide
+## It hides dock only when there are overlapping windows
+## However, I want to to be always hidden unless I hover near it
+gsettings set org.gnome.shell.extensions.dash-to-dock intellihide false
 
 
 
