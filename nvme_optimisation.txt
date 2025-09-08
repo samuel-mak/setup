@@ -1,0 +1,18 @@
+sudo apt install fio
+fio --name=test --filename=/mnt/nvme/testfile --size=512M --bs=4k --rw=randread --ioengine=libaio --iodepth=32 --runtime=30 --time_based --group_reporting
+
+sudo fio --name=test --filename=/mnt/nvme/testfile --size=512M --bs=4k --rw=randread --ioengine=libaio --iodepth=32 --runtime=30 --time_based --group_reporting
+
+sudo lspci -vv | grep -i -A 20 nvme
+sudo smartctl -a /dev/nvme0
+sudo apt install smartctl
+sudo apt istall smartmontools
+sudo smartctl -a /dev/nvme0
+cat /sys/block/nvme0n1/queue/scheduler
+echo mq-deadline | sudo tee /sys/block/nvme0n1/queue/scheduler
+cat /sys/block/nvme0n1/queue/scheduler
+mount | grep nvme
+sudo mount -o remount,noatime,discard /
+mount | grep nvme
+
+
