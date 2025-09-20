@@ -1,0 +1,10 @@
+
+
+syntax off 
+
+set number 
+
+" Useful for jk line jump
+set relativenumber
+
+highlight LineNr ctermfg=green

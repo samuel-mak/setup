@@ -4,13 +4,20 @@ Package manager
 Browser (Firefox)
 git
 Text Editor (vim)
-Terminal emulator (e.g. I simply use the OS-native terminal - maybe xterm or Alacritty)
+Terminal emulator (xterm otherwise use native terminal)
 R
 Python
 tmux
 bash
 yt-dlp
 vlc
+imagemagick (or called convert or image)
+pandoc
+
+
+Packages not in repo
+Proton VPN
+
 
 Install brew from Homebrew website
 Use brew to install the rest of the software

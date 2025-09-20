@@ -1,7 +1,27 @@
 #!/usr/bin/env bash
 
-software=("git"  "vim"
-	 "curl")
+software=(
+	"xterm"
+	"bash"
+	"vim"
+	"git"
+	"curl"
+	"tmux"
+	"firefox"
+	"r-base"
+	"python3"
+	"imagemagick"
+	"vlc"
+	"pandoc"
+	"yt-dlp"
+	
+)
+
+# Software not part of apt
+# proton vpn
+
+# Other software needed but is native
+# GNU coreutils (incl. sha256sum), findutils (e.g. xargs, find, grep)
 
 apt-get update
 apt-get upgrade -y
