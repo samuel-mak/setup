@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+mydir="$(pwd)"
+echo $mydir
+
 # Create desktop application autostart config script
 if [ ! -d ~/.config/autostart ]; then
 	cd ~/.config
@@ -19,12 +22,18 @@ else
 	echo ".vimrc exists and is correct!"
 fi
 
+cd $mydir
 
 # Display resolution
 # This is a bit tricky to script, you might need further adjustments, but this is a good first step
 ## Set HDMI 2 connection as the primary display and set resolution to 3840x2160
 display=$(xrandr | grep " connected" | awk '{print $1}' | head -n 1)
 xrandr --output "$display" --mode 3840x2160 --primary
+
+## Tips for gsettings
+## If you don't know what parameters are for what, then do `gsettings list-recursively` to list all the current settings, go to the GUI settings and do something, and do that list again to see what changed, this way you can map what's in the setting and gsettings parameters
+
+
 	
 # Display scaling
 ## Scale to 200%
@@ -49,6 +58,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 ## Show the "show-apps" button (only)
 gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button true
 ## Autohide dock
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
 ## Disable intellihide
 ## intellihide is a type of autohide
@@ -56,12 +66,21 @@ gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
 ## However, I want to to be always hidden unless I hover near it
 gsettings set org.gnome.shell.extensions.dash-to-dock intellihide false
 
+## Remove dock panel and position dock tray to middle
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+
+## Dark theme
+### This may not not have an effect - The line below should be the effector
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
+## No desktop icons
+gsettings set org.gnome.desktop.background show-desktop-icons false
+
+# Set xterm as the default
+sudo update-alternatives --set x-terminal-emulator /usr/bin/xterm
 
 
-
-
-
-
-
-
-
+## Source
+scripts/bash.sh
+scripts/xresources.sh

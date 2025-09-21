@@ -132,4 +132,4 @@ export GIT_EDITOR='vim'
 # Set pager to less (was vim but not really compatible due to specific formatting)
 export MANPAGER=less
 
-alias waterfox='/opt/firefox/firefox > /dev/null 2>&1 &'
+alias fox='firefox > /dev/null 2>&1 &'

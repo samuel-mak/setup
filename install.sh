@@ -7,7 +7,6 @@ software=(
 	"git"
 	"curl"
 	"tmux"
-	"firefox"
 	"r-base"
 	"python3"
 	"imagemagick"

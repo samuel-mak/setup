@@ -17,6 +17,8 @@ set termguicolors
 			
 set tabstop=8
 
+highlight Normal guifg=#ADADAD guibg=#000000
+
 highlight LineNr guifg=#45bca6 guibg=#000000
 
 highlight EndOfBUffer ctermfg=909090
