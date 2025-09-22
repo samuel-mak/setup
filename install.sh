@@ -13,6 +13,7 @@ software=(
 	"vlc"
 	"pandoc"
 	"yt-dlp"
+	"tree"
 	
 )
 

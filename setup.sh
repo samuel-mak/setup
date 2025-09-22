@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 mydir="$(pwd)"
-echo $mydir
 
 # Create desktop application autostart config script
 if [ ! -d ~/.config/autostart ]; then
@@ -74,8 +73,15 @@ gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
+## Highlight color
+gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-viridian-dark'
+gsettings set org.gnome.desktop.interface icon-theme 'Yaru-viridian'
+
 ## No desktop icons
 gsettings set org.gnome.desktop.background show-desktop-icons false
+
+## Time inactive until screen saver (seconds)
+gsettings set org.gnome.desktop.session idle-delay 3600
 
 # Set xterm as the default
 sudo update-alternatives --set x-terminal-emulator /usr/bin/xterm

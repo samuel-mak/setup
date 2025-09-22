@@ -9,3 +9,18 @@ in this file, it has a linked sh file which is in ~/projects/setup/scripts/xreso
 circumvent.
 
 Okay, not a symlink anymore, desktop is pointing to the actual sh file 
+
+Steps
+1. SSH keys
+	- Get a copy of .ssh directory from storage to home
+	- Run `chmod 700 ~/.ssh && chmod 600 ~/.ssh/*`
+2. Get git 
+	- If using apt, then run `sudo apt update && sudo apt install git`
+3. Clone `setup` git repo from github 
+	- Run `git clone git@github.com:samuel-mak/setup.git` in any directory in home
+4. Folder structure and files (e.g. git repos) 
+5. Installs 
+6. Application configuration
+7. Desktop configuration
+
+
