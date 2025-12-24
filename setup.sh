@@ -86,6 +86,15 @@ gsettings set org.gnome.desktop.session idle-delay 3600
 # Set xterm as the default
 sudo update-alternatives --set x-terminal-emulator /usr/bin/xterm
 
+# Disable screen blanking (don't turn off screen after inactivity)
+gsettings set org.gnome.desktop.session idle-delay 0
+
+
+# MacBook Pro Intel/T2 specific settings
+# Disable automatic suspend when plugged in to power source
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
+# Disable automatic suspend when on battery power
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type 'nothing'
 
 ## Source
 scripts/bash.sh
