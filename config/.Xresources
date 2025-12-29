@@ -1,30 +1,31 @@
 ! Config file for X applications (e.g. xterm)
 ! To source this, run `xrdb <path to this file>`
+! To update xresource, run `xrdb -merge <path to this file>`
 
 ! Combination of geometry and faceSize determines window size
 XTerm*geometry: 80x24
 XTerm*faceName: monospace
 XTerm*faceSize: 10
-XTerm*foreground: #A8A8A8
+XTerm*foreground: #9C9C9C
 XTerm*background: #000000
 
-! Set all rendered font colour to #A8A8A8
-XTerm*color0: #A8A8A8  
-XTerm*color1: #A8A8A8 
-XTerm*color2: #43A18A 
-XTerm*color3: #A8A8A8 
-XTerm*color4: #A8A8A8 
-XTerm*color5: #A8A8A8 
-XTerm*color6: #A8A8A8 
-XTerm*color7: #A8A8A8 
-XTerm*color8: #A8A8A8 
-XTerm*color9: #A8A8A8 
-XTerm*color10: #43A18A 
-XTerm*color11: #A8A8A8 
-XTerm*color12: #A8A8A8 
-XTerm*color13: #A8A8A8 
-XTerm*color14: #A8A8A8 
-XTerm*color15: #A8A8A8 
+! Set all rendered font colour
+XTerm*color0: #000000  ! black 
+XTerm*color1: #BC4545  ! darkred
+XTerm*color2: #45BCA6  ! darkgreen
+XTerm*color3: #9C9C9C  ! brown
+XTerm*color4: #9C9C9C  ! darkblue
+XTerm*color5: #9C9C9C  ! darkmagenta
+XTerm*color6: #9C9C9C  ! darkcyan
+XTerm*color7: #9C9C9C  ! lightgrey
+XTerm*color8: #9C9C9C  ! darkgrey
+XTerm*color9: #BC4545  ! red
+XTerm*color10: #45BCA6 ! green
+XTerm*color11: #9C9C9C ! yellow
+XTerm*color12: #9C9C9C ! blue
+XTerm*color13: #9C9C9C ! magenta
+XTerm*color14: #9C9C9C ! cyan
+XTerm*color15: #9C9C9C ! white
 
 ! DPI of 192 is for Resolution of 3820x2160 scaled at 200%
 Xft.dpi: 192
