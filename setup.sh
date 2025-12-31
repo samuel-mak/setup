@@ -74,8 +74,7 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
 ## Highlight color
-gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-viridian-dark'
-gsettings set org.gnome.desktop.interface icon-theme 'Yaru-viridian'
+gsettings set org.gnome.desktop.interface accent-color 'green'
 
 ## No desktop icons
 gsettings set org.gnome.desktop.background show-desktop-icons false
@@ -95,6 +94,9 @@ gsettings set org.gnome.desktop.session idle-delay 0
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
 # Disable automatic suspend when on battery power
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type 'nothing'
+
+# Disable automatic suspend when on battery power
+gsettings set org.gnome.settings-daemon.plugins.power power-button-action 'nothing'
 
 ## Source
 scripts/bash.sh
