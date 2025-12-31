@@ -30,14 +30,6 @@ set relativenumber
 " collaborators insist
 set tabstop=8
 
-" Text wrapping from 101
-set textwidth=0
-set wrap
-set wrapmargin=0
-" Break by tokens not characters
-set linebreak
-set columns=100
-
 " Text colour in normal mode
 highlight Normal ctermfg=15 ctermbg=0
 
@@ -70,7 +62,7 @@ set noswapfile
 set statusline=%F
 
 " Status line colour
-highlight StatusLine ctermfg=0 ctermbg=10
+highlight StatusLine ctermfg=0 ctermbg=15
 
 " Make status line persists
 set laststatus=2
