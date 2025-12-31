@@ -27,7 +27,7 @@ XTerm*color6: #9C9C9C
 ! lightgrey
 XTerm*color7: #9C9C9C
 ! darkgrey
-XTerm*color8: #9C9C9C
+XTerm*color8: #666666
 ! red
 XTerm*color9: #BC4545
 ! green
