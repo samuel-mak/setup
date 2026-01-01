@@ -48,25 +48,8 @@ gsettings set org.gnome.desktop.background picture-options 'none'
 gsettings set org.gnome.desktop.background primary-color '#000000'
 
 # Dock
-## Dock position to bottom
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM'
 ## Don't display any applications in dock
 gsettings set org.gnome.shell favorite-apps "[]"
-## Don't display trash in dock
-gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
-## Show the "show-apps" button (only)
-gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button true
-## Autohide dock
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
-gsettings set org.gnome.shell.extensions.dash-to-dock autohide true
-## Disable intellihide
-## intellihide is a type of autohide
-## It hides dock only when there are overlapping windows
-## However, I want to to be always hidden unless I hover near it
-gsettings set org.gnome.shell.extensions.dash-to-dock intellihide false
-
-## Remove dock panel and position dock tray to middle
-gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 
 ## Dark theme
 ### This may not not have an effect - The line below should be the effector
@@ -88,6 +71,8 @@ sudo update-alternatives --set x-terminal-emulator /usr/bin/xterm
 # Disable screen blanking (don't turn off screen after inactivity)
 gsettings set org.gnome.desktop.session idle-delay 0
 
+# Disable alert sound
+gsettings set org.gnome.desktop.sound event-sounds false
 
 # MacBook Pro Intel/T2 specific settings
 # Disable automatic suspend when plugged in to power source
