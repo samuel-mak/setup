@@ -74,6 +74,13 @@ gsettings set org.gnome.desktop.session idle-delay 0
 # Disable alert sound
 gsettings set org.gnome.desktop.sound event-sounds false
 
+# Disable hot-corners
+gsettings set org.gnome.desktop.interface enable-hot-corners false
+
+# Time format
+gsettings set org.gnome.desktop.interface clock-format '24h'
+
+
 # MacBook Pro Intel/T2 specific settings
 # Disable automatic suspend when plugged in to power source
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
