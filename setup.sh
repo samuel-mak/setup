@@ -89,6 +89,8 @@ sudo update-alternatives --set x-terminal-emulator /usr/bin/xterm
 # Disable screen blanking (don't turn off screen after inactivity)
 gsettings set org.gnome.desktop.session idle-delay 0
 
+# Disable alert sound
+gsettings set org.gnome.desktop.sound event-sounds false
 
 # Disable hot-corners
 gsettings set org.gnome.desktop.interface enable-hot-corners false
