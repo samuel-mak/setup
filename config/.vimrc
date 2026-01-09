@@ -52,6 +52,9 @@ match OverLength /\%81v.\+/
 " End of buffer ~ colour
 highlight EndOfBuffer ctermfg=15
 
+" Don't highlight search term match
+set nohlsearch
+
 " No swap files
 " I trust my system (i.e. Debian) and myself
 " I don't trust my power supply as much though but see what happens
