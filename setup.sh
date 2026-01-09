@@ -80,6 +80,8 @@ gsettings set org.gnome.desktop.interface enable-hot-corners false
 # Time format
 gsettings set org.gnome.desktop.interface clock-format '24h'
 
+# Show all windows
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Super>Tab', '<Alt>Tab']"
 
 # MacBook Pro Intel/T2 specific settings
 # Disable automatic suspend when plugged in to power source
