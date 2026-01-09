@@ -9,6 +9,13 @@ XTerm*faceSize: 10
 XTerm*foreground: #9C9C9C
 XTerm*background: #000000
 
+! Cursor
+! Cursor blink
+XTerm*cursorBlink: false
+! Cursor color
+XTerm*cursorColor: #9C9C9C
+! Cursor shape is block by default in xterm so no configuration needed
+
 ! Set all rendered font colour
 ! black 
 XTerm*color0: #000000
