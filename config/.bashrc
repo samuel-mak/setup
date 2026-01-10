@@ -1,6 +1,6 @@
-
 # append don't overwrite .bash_history
 shopt -s histappend
+
 
 # History 
 HISTFILESIZE=2000
@@ -33,9 +33,10 @@ echo -en "\e]PF9C9C9C" #white
 clear
 #fi
 
+
+# Variables
 export EDITOR='vim'
 export VISUAL='vim'
 export GIT_EDITOR='vim'
-
 export MANPAGER=less
-
+export LS_COLORS='never'
