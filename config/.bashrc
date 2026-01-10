@@ -39,4 +39,8 @@ export EDITOR='vim'
 export VISUAL='vim'
 export GIT_EDITOR='vim'
 export MANPAGER=less
-export LS_COLORS='never'
+# export LS_COLORS='never' - This didn't work in tmux
+
+
+# Alias
+alias ls='ls --color=never'
