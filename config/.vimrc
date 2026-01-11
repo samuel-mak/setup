@@ -47,7 +47,9 @@ highlight Visual ctermfg=0 ctermbg=15
 " This is a linux console colour quirk that I can only accept
 " see https://unix.stackexchange.com/questions/363101
 highlight OverLength ctermfg=0 ctermbg=15
-match OverLength /\%81v.\+/
+"match OverLength /\%81v.\+/ " for all characters after the 80th col
+" Only for the character at the 81st col (this may suffice)
+match OverLength /\%81v/
 
 " End of buffer ~ colour
 highlight EndOfBuffer ctermfg=15
