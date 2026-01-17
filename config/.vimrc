@@ -25,6 +25,10 @@ set number
 " Set line number to be relative to the line the cursor is on
 set relativenumber
 
+" Filetype plugins
+" The filetype plugin
+filetype plugin off
+
 " Always use tabs of 8 spaces in width	
 " I can always replace tabs with spaces (or vice versa) if necessary if
 " collaborators insist
