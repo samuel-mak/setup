@@ -3,7 +3,7 @@
 ! To update xresource, run `xrdb -merge <path to this file>`
 
 ! Combination of geometry and faceSize determines window size
-XTerm*geometry: 80x24
+XTerm*geometry: 85x24
 XTerm*faceName: monospace
 XTerm*faceSize: 10
 XTerm*foreground: #9C9C9C
