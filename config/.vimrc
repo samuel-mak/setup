@@ -99,6 +99,7 @@ highlight Include ctermfg=15 ctermbg=0
 highlight Keyword ctermfg=15 ctermbg=0
 highlight Label ctermfg=15 ctermbg=0
 highlight Macro ctermfg=15 ctermbg=0
+highlight MatchParen ctermfg=10 ctermbg=0
 highlight Number ctermfg=15 ctermbg=0
 highlight Operator ctermfg=15 ctermbg=0
 highlight PreCondit ctermfg=15 ctermbg=0
