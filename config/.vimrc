@@ -25,10 +25,6 @@ set number
 " Set line number to be relative to the line the cursor is on
 set relativenumber
 
-" Filetype plugins
-" The filetype plugin
-filetype plugin off
-
 " Always use tabs of 8 spaces in width	
 " I can always replace tabs with spaces (or vice versa) if necessary if
 " collaborators insist
@@ -74,10 +70,12 @@ highlight StatusLine ctermfg=0 ctermbg=15
 set laststatus=2
 
 " Syntax highlighting
-syntax on
+syntax off
+
 
 " Syntax colour definition
-" I only desire colours for comments
+" If any syntax highlighting, I only want greyed out comments, and that's only
+" a little want, not a real necessity
 highlight Boolean ctermfg=15 ctermbg=0
 highlight Character ctermfg=15 ctermbg=0
 highlight Comment ctermfg=8 ctermbg=0
@@ -114,3 +112,9 @@ highlight Todo ctermfg=15 ctermbg=0
 highlight Type ctermfg=15 ctermbg=0
 highlight Typedef ctermfg=15 ctermbg=0
 highlight Underlined ctermfg=15 ctermbg=0
+
+
+" Filetype-related syntax
+filetype plugin off
+filetype indent off
+filetype off
