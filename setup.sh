@@ -65,9 +65,6 @@ gsettings set org.gnome.desktop.background show-desktop-icons false
 ## Time inactive until screen saver (seconds)
 gsettings set org.gnome.desktop.session idle-delay 3600
 
-# Set xterm as the default
-sudo update-alternatives --set x-terminal-emulator /usr/bin/xterm
-
 # Disable screen blanking (don't turn off screen after inactivity)
 gsettings set org.gnome.desktop.session idle-delay 0
 
