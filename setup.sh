@@ -92,3 +92,5 @@ gsettings set org.gnome.settings-daemon.plugins.power power-button-action 'nothi
 ## Source
 scripts/bash.sh
 scripts/xresources.sh
+
+echo "done!"
