@@ -60,7 +60,9 @@ set nohlsearch
 " No swap files
 " I trust my system (i.e. Debian) and myself
 " I don't trust my power supply as much though but see what happens
-set noswapfile
+" Fedora was stuck in a restart loop due to Bose QC35 Bluetooth connection
+" (handsfree) - So set swapfile
+set swapfile
 
 " Status line
 " Status line format
