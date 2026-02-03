@@ -110,3 +110,5 @@ gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-typ
 ## Source
 scripts/bash.sh
 scripts/xresources.sh
+
+echo "done!"
