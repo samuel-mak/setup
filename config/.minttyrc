@@ -1,0 +1,33 @@
+# Font
+Font=Ubuntu Mono
+FontHeight=13
+
+# Terminal emulator window
+# Transparency
+# Values can be categorical (off/low/medium/high) or numeric (0-255)
+Transparency=off
+Columns=80
+Rows=24
+
+# Cursor
+CursorType=block
+CursorBlinks=no
+CursorColor=156, 156, 156
+
+# Color definition
+Black=0, 0, 0
+BoldBlack=0, 0, 0
+Red=188, 69, 69
+BoldRed=188, 69, 69
+Green=69, 188, 166
+BoldGreen=69, 188, 166
+Yellow=156, 156, 156
+BoldYellow=156, 156, 156
+Blue=156, 156, 156
+BoldBlue=156, 156, 156
+Magenta=156, 156, 156
+BoldMagenta=156, 156, 156
+Cyan=156, 156, 156
+BoldCyan=156, 156, 156
+White=156, 156, 156
+BoldWhite=156, 156, 156
