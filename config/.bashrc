@@ -6,7 +6,8 @@ PS1='\[\e[38;2;84;180;165m\]\u@\h:\w\$ \[\e[0m\]'
 # Paths
 ## System
 export PATH="$PATH:/c/Windows/System32"
-export PATH="$PATH:/ucrt64/bin:/usr/bin"
+export PATH="$PATH:/usr/bin"
+export PATH="$PATH:/ucrt64/bin"
 ## opt
 export PATH="$PATH:/opt/Mozilla Firefox"
 export PATH="$PATH:/opt/R/R-4.6.0/bin"
