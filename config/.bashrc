@@ -42,5 +42,9 @@ export MANPAGER=less
 # export LS_COLORS='never' - This didn't work in tmux
 
 
+# Paths
+export PATH="$PATH:/opt/quarto-1.9.37/bin"
+
+
 # Alias
 alias ls='ls --color=never'
