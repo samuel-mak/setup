@@ -12,6 +12,8 @@
 " ----------------------------------------------------------------------------
 "hjjjjhhhhhhhhhhhhhhhhhjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 
+" viminfo size
+set viminfo='100,<999999999,s999999999
 
 " Use a 16-console-colour system (colors defined in .bashrc)
 set t_Co=16
