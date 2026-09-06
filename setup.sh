@@ -23,11 +23,5 @@ export -f lnin
 # VIM
 lnin "$SETUP/config/.vimrc" "$HOME/.vimrc"
 
-# GNOME
-"$SETUP/scripts/gnome.sh"
-
-# X
-"$SETUP/scripts/x.sh"
-
 
 echo "done!"
