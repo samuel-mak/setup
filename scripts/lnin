@@ -1,0 +1,51 @@
+lnin() {
+
+	local x="$(realpath -ms "$1")" # source
+	local y="$(realpath -ms "$2")" # destination
+	local ydir="$(dirname "$y")"
+	local xexists
+	local yexists
+	local ydexists
+	local wrongpath
+
+	# Checks
+	if [ "$x" = "$y" ]
+	then
+		printf "error: source and destination paths are the same\n"
+		return 1
+	fi
+
+	# Create ydir if it doesn't exist
+	mkdir -p "$ydir"
+
+	[[ ! -e "$x" ]]
+	xexists=$?
+
+	[[ ! -e "$y" ]]
+	yexists=$?
+
+	if [ "$xexists" -eq 0 ]
+	then
+		echo "source file does not exist: $x"
+		return 1
+	fi
+
+	if [ "$yexists" -eq 0 ]
+	then
+		ln -sf "$x" "$y"
+		echo "$y created as a symlink to $x"
+	else
+		[[ "$(realpath "$y")" == "$(realpath "$x")" ]]
+		wrongpath=$?
+
+		if [ "$wrongpath" -eq 1 ]
+		then
+			printf "$y existed but was not a symlink to $x\n"
+			printf "setting $y as a symlink to $x\n"
+			ln -sf "$x" "$y"
+			printf "done\n$y is now a symlink to $x\n"
+		else
+			printf "$y is already a symlink to $x\n"
+		fi
+	fi
+}

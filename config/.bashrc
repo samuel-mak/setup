@@ -1,3 +1,10 @@
+# If shell is interactive then do nothing (and continue with the script)
+# Otherwise exit
+case $- in
+	*i*) ;;
+	*) return ;;
+esac
+
 # append don't overwrite .bash_history
 shopt -s histappend
 
@@ -13,7 +20,6 @@ echo -en "\033[?8c"
 
 
 # Colour name to hex map for TTY
-#if [ "$TERM" = "linux" ]; then
 echo -en "\e]P0000000" #black
 echo -en "\e]P1BC4545" #darkred
 echo -en "\e]P245BCA6" #darkgreen
@@ -31,18 +37,17 @@ echo -en "\e]PD9C9C9C" #magenta
 echo -en "\e]PE9C9C9C" #cyan
 echo -en "\e]PF9C9C9C" #white
 clear
-#fi
 
 
 # Variables
+export SETUP="/home/smak/projects/setup"
 export EDITOR='vim'
 export VISUAL='vim'
 export GIT_EDITOR='vim'
 export MANPAGER=less
 # export LS_COLORS='never' - This didn't work in tmux
 
-
-# Paths
+## PATH
 export PATH="$PATH:/opt/quarto-1.9.37/bin"
 
 

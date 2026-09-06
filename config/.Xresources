@@ -20,20 +20,20 @@ XTerm*cursorColor: #9C9C9C
 XTerm*scrollBar: false
 
 ! Set all rendered font colour
-! black 
+! black
 XTerm*color0: #000000
 ! darkred
 XTerm*color1: #BC4545
-! darkgreen 
+! darkgreen
 XTerm*color2: #45BCA6
 ! brown
 XTerm*color3: #9C9C9C
 ! darkblue
-XTerm*color4: #9C9C9C 
+XTerm*color4: #9C9C9C
 ! darkmagenta
-XTerm*color5: #9C9C9C 
+XTerm*color5: #9C9C9C
 ! darkcyan
-XTerm*color6: #9C9C9C 
+XTerm*color6: #9C9C9C
 ! lightgrey
 XTerm*color7: #9C9C9C
 ! darkgrey
@@ -41,17 +41,17 @@ XTerm*color8: #666666
 ! red
 XTerm*color9: #BC4545
 ! green
-XTerm*color10: #45BCA6 
+XTerm*color10: #45BCA6
 ! yellow
-XTerm*color11: #9C9C9C 
+XTerm*color11: #9C9C9C
 ! blue
-XTerm*color12: #9C9C9C 
+XTerm*color12: #9C9C9C
 ! magenta
-XTerm*color13: #9C9C9C 
+XTerm*color13: #9C9C9C
 ! cyan
-XTerm*color14: #9C9C9C 
+XTerm*color14: #9C9C9C
 ! white
-XTerm*color15: #9C9C9C 
+XTerm*color15: #9C9C9C
 
 ! DPI of 192 is for Resolution of 3820x2160 scaled at 200%
 Xft.dpi: 192

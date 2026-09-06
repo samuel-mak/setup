@@ -2,15 +2,14 @@
 " This .vimrc file is used by Vim for its configuration. Upon starting Vim,
 " Vim automatically looks for .vimrc in specific locations, one of which is
 " ~/, and sources the first .vimrc found.
-" 	
+"
 " The .vimrc file can contain all the vim commands (those followed by a colon)
-" and options (those following a command). 
+" and options (those following a command).
 "
 " All vim information can be found in /usr/share/vim/vim91/doc/
 " All vim commands and options can be found in index.txt and options.txt
 " respectively.
 " ----------------------------------------------------------------------------
-"hjjjjhhhhhhhhhhhhhhhhhjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
 
 " viminfo size
 set viminfo='100,<999999999,s999999999
@@ -27,7 +26,7 @@ set number
 " Set line number to be relative to the line the cursor is on
 set relativenumber
 
-" Always use tabs of 8 spaces in width	
+" Always use tabs of 8 spaces in width
 " I can always replace tabs with spaces (or vice versa) if necessary if
 " collaborators insist
 set tabstop=8
@@ -35,7 +34,7 @@ set tabstop=8
 " Text colour in normal mode
 highlight Normal ctermfg=15 ctermbg=0
 
-" Line number colour 
+" Line number colour
 highlight LineNr ctermfg=10 ctermbg=0
 
 " Reverse the foreground and background colour when in visual select

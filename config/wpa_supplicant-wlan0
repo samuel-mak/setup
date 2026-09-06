@@ -1,0 +1,9 @@
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=GB
+
+network={
+	ssid="<ssid>" # ssid is the wifi name - DO NOT PUSH THIS FILE TO REMOTE IF SSID OR PASSWORD IS FILLED
+	psk="<password>" # Password to the wifi
+	key_mgmt=WPA-PSK
+}

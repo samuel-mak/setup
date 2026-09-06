@@ -1,0 +1,12 @@
+[Unit]
+Description=Setup WiFi
+After=multi-user.target
+Wants=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'rfkill unblock wifi && /usr/sbin/wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant-wlan0 && dhcpcd wlan0'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
